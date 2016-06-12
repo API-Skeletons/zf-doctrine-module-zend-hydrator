@@ -56,4 +56,4 @@ If you would like to be involved in the conversation at [DoctrineModule](https:/
 Appreciation
 ------------
 
-Finding this patch would not have been possible without the constant support of [Toon Verwerft](https://github.com/veewee) and his [zf-doctrine-hydration-module](https://github.com/phpro/zf-doctrine-hydration-module).  It took nearly six months to find a solution and he supported my efforts against @doctrineorm the whole time.  Thank you Toon!
+Finding this patch would not have been possible without the constant support of [Toon Verwerft](https://github.com/veewee) and his [zf-doctrine-hydration-module](https://github.com/phpro/zf-doctrine-hydration-module).  It took nearly six months to find a solution and he supported my efforts the whole time.  Thank you Toon!
