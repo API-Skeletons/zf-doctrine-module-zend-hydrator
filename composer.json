@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "zendframework/zend-hydrator": "^2.0",
+        "zendframework/zend-hydrator": "~1.0 || ^2.0",
         "doctrine/doctrine-module": "^1.0"
     },
     "autoload": {
