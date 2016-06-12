@@ -29,7 +29,7 @@
         "zfcampus/zf-apigility": "~1.1",
         "zfcampus/zf-apigility-documentation": "^1.0.5",
         "zfcampus/zf-development-mode": "~2.0",
-        "api-skeletons/zf-doctrine-zend-hydrator": "dev-master",
+        "api-skeletons/zf-doctrine-module-zend-hydrator": "dev-master",
         "doctrine/doctrine-module": "^1.0",
         "doctrine/doctrine-orm-module": "^0.10.0",
         "zfcampus/zf-apigility-doctrine": "dev-master",
