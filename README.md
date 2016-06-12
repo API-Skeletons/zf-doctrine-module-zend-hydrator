@@ -50,7 +50,7 @@ Argument 2 passed to Zend\Stdlib\Hydrator\AbstractHydrator::addStrategy() must b
 This is a Patch Repository
 --------------------------
 
-If you would like to be involved in the conversation at [DoctrineModule](https://github.com/doctrine/DoctrineModule) to help get zend-hydrator working properly in [@doctrineorm](https://twitter.com/doctrineorm) repository you may contribute to the discussions linked above.
+If you would like to be involved in the conversation at [DoctrineModule](https://github.com/doctrine/DoctrineModule) to help get [zendframework/zend-hydrator](https://github.com/zendframework/zend-hydrator) implemented correctly in [@doctrineorm](https://twitter.com/doctrineorm) repository you may contribute to the discussions linked above.
 
 
 Appreciation
