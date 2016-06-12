@@ -1,5 +1,5 @@
 {
-    "name": "api-skeletons/zf-doctrine-zend-hydrator",
+    "name": "api-skeletons/zf-doctrine-module-zend-hydrator",
     "description": "Corrects DoctrineModule classes to use zend-hydrator",
     "type": "library",
     "license": "MIT",
