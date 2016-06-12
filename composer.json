@@ -1,0 +1,21 @@
+{
+    "name": "api-skeletons/zf-doctrine-zend-hydrator",
+    "description": "Corrects DoctrineModule classes to use zend-hydrator",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom H Anderson",
+            "email": "tom.h.anderson@gmail.com"
+        }
+    ],
+    "require": {
+        "zendframework/zend-hydrator": "^2.0",
+        "doctrine/doctrine-module": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DoctrineModule\\Stdlib\\Hydrator\\": "src/"
+        }
+    }
+}
