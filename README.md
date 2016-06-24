@@ -1,6 +1,8 @@
 DoctrineModule zend-hydrator
 ============================
 
+[![Total Downloads](https://poser.pugx.org/api-skeletons/zf-doctrine-module-zend-hydrator/downloads)](https://packagist.org/packages/api-skeletons/zf-doctrine-module-zend-hydrator)
+
 ** This is a Patch Repository **
 
 Since the [zendframework/zend-stdlib](https://github.com/zendframework/zend-stdlib) hydrators were moved into their own repository, [zendframework/zend-hydrator](https://github.com/zendframework/zend-hydrator), the [DoctrineModule](https://github.com/doctrine/DoctrineModule) repository has not been updated to correctly use the new library.  Through many discussions on the issue [@doctrineorm](https://twitter.com/doctrineorm) continues to maintain they are in line with [zendframework/zend-hydrator](https://github.com/zendframework/zend-hydrator) because, very unusually, the new library was written to be backwards compatible with [zendframework/zend-stdlib](https://github.com/zendframework/zend-stdlib) but that backwards compatibility was removed from zend-hydrator in later versions leaving developers who want to use Doctrine in their projects which allow for custom hydrators out on a limb.
