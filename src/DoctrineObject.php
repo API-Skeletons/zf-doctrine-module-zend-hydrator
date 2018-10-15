@@ -29,7 +29,6 @@ use Traversable;
 use Zend\Stdlib\ArrayUtils;
 use Zend\Hydrator\AbstractHydrator;
 use Zend\Hydrator\Filter\FilterProviderInterface;
-use Doctrine\DBAL\Types\Type;
 
 /**
  * This hydrator has been completely refactored for DoctrineModule 0.7.0. It provides an easy and powerful way
@@ -488,18 +487,32 @@ class DoctrineObject extends AbstractHydrator
      *
      * @param  mixed  $value
      * @param  string $typeOfField
-     * @return mixed
+     * @return DateTime
      */
     protected function handleTypeConversions($value, $typeOfField)
     {
-        if (! $typeOfField) {
-            return $value;
+        switch ($typeOfField) {
+            case 'datetimetz':
+            case 'datetime':
+            case 'time':
+            case 'date':
+                if ('' === $value) {
+                    return null;
+                }
+
+                if (is_int($value)) {
+                    $dateTime = new DateTime();
+                    $dateTime->setTimestamp($value);
+                    $value = $dateTime;
+                } elseif (is_string($value)) {
+                    $value = new DateTime($value);
+                }
+
+                break;
+            default:
         }
 
-        $type = Type::getType($typeOfField);
-        $platform = $this->objectManager->getConnection()->getDatabasePlatform();
-
-        return $type->convertToPHPValue($value, $platform);
+        return $value;
     }
 
     /**
