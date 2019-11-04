@@ -183,12 +183,15 @@ class DoctrineObject extends AbstractHydrator
 
             $getter = 'get' . Inflector::classify($fieldName);
             $isser  = 'is' . Inflector::classify($fieldName);
+            $hasser  = 'has' . Inflector::classify($fieldName);
 
             $dataFieldName = $this->computeExtractFieldName($fieldName);
             if (in_array($getter, $methods)) {
                 $data[$dataFieldName] = $this->extractValue($fieldName, $object->$getter(), $object);
             } elseif (in_array($isser, $methods)) {
                 $data[$dataFieldName] = $this->extractValue($fieldName, $object->$isser(), $object);
+            } elseif (in_array($hasser, $methods)) {
+                $data[$dataFieldName] = $this->extractValue($fieldName, $object->$hasser(), $object);
             } elseif (substr($fieldName, 0, 2) === 'is'
                 && ctype_upper(substr($fieldName, 2, 1))
                 && in_array($fieldName, $methods)) {
